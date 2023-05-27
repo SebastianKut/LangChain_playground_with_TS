@@ -25,13 +25,16 @@
   "contributors": [],
   "scripts": {
     "build": "tsc",
-    "start": "node ./dist/app.js",
-    "dev": "ts-node --esm ./src/app.ts"
+    "start": "node ./dist/",
+    "dev": "ts-node --esm ./src/"
   },
   "dependencies": {
+    "@pinecone-database/pinecone": "^0.1.6",
     "@types/node": "^20.2.4",
+    "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.3",
     "langchain": "^0.0.83",
+    "node-fetch": "^3.3.1",
     "openai": "^3.2.1",
     "serpapi": "^1.1.1",
     "typescript": "^5.0.4"
