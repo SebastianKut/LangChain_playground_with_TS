@@ -34,7 +34,7 @@ export const run = async () => {
   const chain = VectorDBQAChain.fromLLM(model, loadedVectorStore);
   /* Ask it a question */
   const res = await chain.call({
-    input_documents: docs,
+    // input_documents: docs,
     query: 'What did the president say about Justice Breyer?',
   });
   console.log(res);
